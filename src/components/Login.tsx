@@ -54,7 +54,7 @@ const Login = () => {
                                         onChange={(e) => setPassword(e.target.value)} type={showPass ? "text" : "password"} name="password" className='w-full h-full outline-none' />
 
                                     {
-                                        showPass ? <FiEyeOff onClick={() => SetShowPass(false)} className='text-[#6D7B88] cursor-pointer' size={24} /> : <FiEye onClick={() => SetShowPass(true)} className='text-[#6D7B88] cursor-pointer' size={24} />
+                                        showPass ? <FiEye onClick={() => SetShowPass(false)} className='text-[#6D7B88] cursor-pointer' size={24} /> : <FiEyeOff onClick={() => SetShowPass(true)} className='text-[#6D7B88] cursor-pointer' size={24} />
 
                                     }
                                 </div>
@@ -67,7 +67,7 @@ const Login = () => {
                                         <>
 
                                             <div className='flex items-center  gap-2'>
-                                                <label className="relative tb-checkbox w-6 h-6">
+                                                <label className="relative tb-checkbox w-5 h-5">
                                                     <input required
                                                         className="absolute w-full block opacity-0 h-full"
                                                         type="checkbox"
@@ -78,7 +78,7 @@ const Login = () => {
                                             <Link to={'/'} className='text-black underline text-sm mdd:text-[16px]  font-medium'>Forgot password?</Link>
                                         </>
                                         : <div className='flex items-center  gap-2'>
-                                            <label className="relative tb-checkbox w-6 h-6">
+                                            <label className="relative tb-checkbox w-5 h-5">
                                                 <input required
                                                     className="absolute w-full block opacity-0 h-full"
                                                     type="checkbox"

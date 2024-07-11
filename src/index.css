@@ -59,10 +59,10 @@ input:-webkit-autofill:active {
 .tb-checkbox span::before {
   content: "";
   position: absolute;
-  left: 8px;
+  left: 6px;
   bottom: 5px;
-  width: 8px;
-  height: 17px;
+  width: 7px;
+  height: 15px;
   border: solid #003F2A;
   border-width: 0 2px 2px 0;
   transform: rotate(45deg);
