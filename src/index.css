@@ -1,0 +1,78 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+::-webkit-scrollbar {
+  width: 0;
+}
+
+:root {
+  --Text-Headline-On-Dark: rgba(122, 252, 170, 1);
+}
+
+html
+body {
+  overflow-x: hidden !important;
+  scroll-behavior: smooth;
+
+}
+
+body {
+  font-family: "Public Sans", sans-serif;
+  height: 100%;
+  width: 100%;
+  scrollbar-width: none;
+}
+* {
+  margin: 0;
+  padding: 0;
+
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+li {
+  list-style: none !important;
+}
+
+.heading {
+  color: var(--Text-Headline-On-Dark);
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    transition: background-color 5000s ease-in-out 0s;
+}
+
+/* ----- checkbox  */
+
+.tb-checkbox span {
+  border-radius: 2px;
+  
+  border: 1px solid #A6B3C0;
+  background-color: #FCFDFD;
+}
+.tb-checkbox span::before {
+  content: "";
+  position: absolute;
+  left: 8px;
+  bottom: 5px;
+  width: 8px;
+  height: 17px;
+  border: solid #003F2A;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+  opacity: 0;
+}
+
+.tb-checkbox input:checked ~ span::before {
+  opacity: 1;
+}
+.tb-checkbox input:checked ~ span {
+  background: #50F89A;
+  border: none;
+}
