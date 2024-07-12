@@ -51,7 +51,7 @@ const Login = () => {
                                 <label className='text-[#222B33] text-sm mdd:text-[16px] font-medium font-public_sans'>Password</label>
                                 <div className='relative border border-[#CFD8E1] bg-[#f9fbfb] rounded-sm px-3 py-[10px] outline-none text-[#3B4752] w-full text-sm mdd:text-[16px]  font-[320] flex items-center justify-between'>
                                     <input required value={password}
-                                        onChange={(e) => setPassword(e.target.value)} type={showPass ? "text" : "password"} name="password" className='w-full h-full outline-none' />
+                                        onChange={(e) => setPassword(e.target.value)} type={showPass ? "text" : "password"} name="password" className='w-full bg-transparent h-full outline-none' />
 
                                     {
                                         showPass ? <FiEye onClick={() => SetShowPass(false)} className='text-[#6D7B88] cursor-pointer' size={24} /> : <FiEyeOff onClick={() => SetShowPass(true)} className='text-[#6D7B88] cursor-pointer' size={24} />
